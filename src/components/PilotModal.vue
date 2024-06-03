@@ -3,7 +3,7 @@
 		<div class="pilot-header-container">
 			<div class="section-header clipped-medium-backward-bio">
 				<img src="/icons/pilot-icon.svg" />
-				<h1>{{ pilot.alias }} [{{ pilot.callsign }}]</h1>
+				<h1>{{ pilot.alias }} [{{ pilot.rank }}]</h1>
 			</div>
 			<div class="rhombus-back">&nbsp;</div>
 		</div>
@@ -45,12 +45,12 @@ export default {
 	},
 	computed: {
 		portrait() {
-			return `/pilots/${this.pilot.callsign}.png`
+			return `/pilots/${this.pilot.alias}.png`
 		},
 	},
 	created() {
 		let self = this;
-		let md = `/pilots/${this.pilot.callsign}.md`
+		let md = `/pilots/${this.pilot.alias}.md`
 		var client = new XMLHttpRequest();
 		client.open('GET', md);
 		client.onreadystatechange = function () {

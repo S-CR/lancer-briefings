@@ -5,13 +5,13 @@
 /*-------------------------------------*/
 
 //Primary Colors
-$primary: rgba(125, 187, 187, 1);
-$secondary: rgba(23, 29, 30, 0.8);
+$primary: rgb(153, 30, 42);
+$secondary: rgba(30, 23, 23, 0.8);
 $highlight-hover: rgba(255, 255, 255, 0.3);
 $highlight-active: rgba(255, 255, 255, 0.1);
 
 //Primary Text
-$text-headers: rgba(0, 0, 0, 1);
+$text-headers: rgb(255, 255, 255);
 $text-location: rgba(255, 255, 255, 0.87);
 
 //Location Information
@@ -129,6 +129,7 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    color: $text-headers;
   }
 
   #title-subheader {
@@ -140,6 +141,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     padding-left: 0.32em;
+    color: $text-headers;
   }
 
   #subtitle-header {
@@ -150,6 +152,7 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: $text-headers;
   }
 
   #subtitle-subheader {
@@ -160,6 +163,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    color: $text-headers;
   }
 }
 
@@ -322,6 +326,7 @@ section .section-header {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: $text-headers;
   }
 }
 
@@ -495,7 +500,7 @@ section .section-header {
   height: 136px;
   border-bottom: none;
   z-index: 1;
-  cursor: pointer;
+  /*cursor: pointer;*/
 
   .pilot-loadout {
     width: 250px;
